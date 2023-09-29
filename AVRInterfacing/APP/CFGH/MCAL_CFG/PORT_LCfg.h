@@ -1,21 +1,12 @@
-/*
- * PORT_LCfg.h
- *
- * Created: 9/21/2023 9:56:33 PM
- *  Author: Eslam 
- */ 
-
 
 #ifndef PORT_LCFG_H_
 #define PORT_LCFG_H_
 
-
 #include "STD.h"
 
-#define DEFINED_PINS		1
-#define NUMBER_OF_PORT_PINS 8
 
-
+#define  DEFINED_PINS        6
+#define NUMBER_OF_PORT_PINS  8
 
 #define PORTA_PIN0  0
 #define PORTA_PIN1  1
@@ -54,20 +45,16 @@
 #define PORTD_PIN6  30
 #define PORTD_PIN7  31
 
-#define PIN_DIRECTION_INPUT  0
-#define PIN_DIRECTION_OUTPUT 1
+#define  PIN_DIR_INPUT   0
+#define  PIN_DIR_OUTPUT   1
 
-typedef struct
+typedef struct 
 {
 	uint8 PIN_NUM;
-	uint8 DIR; //Direction of every pin
-	
+	uint8 DIR;
 }PIN_PARAMETERS;
 
-extern PIN_PARAMETERS PORT_Intialization[DEFINED_PINS]; // Array of mcu pins
-
-
-
+extern PIN_PARAMETERS PORT_Intialization[DEFINED_PINS];
 
 
 #endif /* PORT_LCFG_H_ */

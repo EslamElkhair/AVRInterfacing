@@ -18,7 +18,7 @@
 
 #define PINB	*(volatile uint8*)(0x36)
 #define DDRB	*(volatile uint8*)(0x37)
-#define PORTB	*(volatile uint8)(0x38)
+#define PORTB	*(volatile uint8*)(0x38)
 
 #define PINC	*(volatile uint8*)(0x33)
 #define DDRC	*(volatile uint8*)(0x34)

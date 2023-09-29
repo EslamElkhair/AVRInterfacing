@@ -8,9 +8,13 @@ APP\MAIN\main.c
 
 HAL\Button\Button_Core.c
 
+HAL\LCD\LCD_Core.c
+
 HAL\LED\LED_Core.c
 
 HAL\SevenSeg\SevenSegment_Core.c
+
+MCAL\DIO\DIO_Core.c
 
 MCAL\PORT\PORT_CORE.c
 
